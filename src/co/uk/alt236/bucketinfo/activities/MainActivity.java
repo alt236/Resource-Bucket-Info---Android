@@ -13,16 +13,16 @@ import co.uk.alt236.bucketinfo.util.GuiCreation;
 
 public class MainActivity extends Activity {
 	TableLayout mTable;
-	
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        mTable = (TableLayout) findViewById(R.id.table);
 
-        getInfo();
-    }
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		mTable = (TableLayout) findViewById(R.id.table);
+
+		getInfo();
+	}
 
 	private void getInfo() {
 		GuiCreation gc = new GuiCreation(this);
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 		mTable.addView(gc.createRow("Screen width:", String.valueOf(metrics.heightPixels), ""));
 		mTable.addView(gc.createRow("Screen height:", String.valueOf(metrics.widthPixels), ""));
 		mTable.addView(gc.createRow("Screen density:", String.valueOf(metrics.density), ""));
-		mTable.addView(gc.createRow("Screen DPI:", String.valueOf(metrics.densityDpi), ""));
+		mTable.addView(gc.createRow("Screen DPI:", String.valueOf(metrics.densityDpi), "(" + resolveDpi(metrics.densityDpi) + ")"));
 		mTable.addView(gc.createRow("Screen Layout:", resolveScreenLayout(getResources().getConfiguration().screenLayout), ""));
 		mTable.addView(gc.createRow("Screen Orientation:", resolveScreenOrientation(getResources().getConfiguration().orientation), ""));
 		if(android.os.Build.VERSION.SDK_INT >= 8){
@@ -48,8 +48,25 @@ public class MainActivity extends Activity {
 		mTable.addView(gc.createRow("Display width :", String.valueOf(display.getWidth()), "(Depracated)"));
 		mTable.addView(gc.createRow("Display height:", String.valueOf(display.getHeight()), "(Depracated)"));
 	}
-	
-	
+
+
+	private String resolveDpi(int dpi){
+		switch(dpi){
+		case DisplayMetrics.DENSITY_LOW:
+			return "ldpi";
+		case DisplayMetrics.DENSITY_MEDIUM:
+			return "mdpi";
+		case DisplayMetrics.DENSITY_HIGH:
+			return "hdpi";
+		case DisplayMetrics.DENSITY_TV:
+			return "tvdpi";
+		case DisplayMetrics.DENSITY_XHIGH:
+			return "xhdpi";
+		default:
+			return "non-standard";
+		}
+	}
+
 	private String resolveScreenOrientation(int orientation){
 		switch(orientation){
 		case Configuration.ORIENTATION_LANDSCAPE:
@@ -62,7 +79,7 @@ public class MainActivity extends Activity {
 			return "undefined (" + orientation +")";
 		}
 	}
-	
+
 	private String resolveScreenLayout(int layout){
 		switch(layout & Configuration.SCREENLAYOUT_SIZE_MASK){
 		case Configuration.SCREENLAYOUT_SIZE_XLARGE:
