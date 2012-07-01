@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Resource Bucket Info</string>
+    <string name="app_acknowledgements"></string>
+    <string name="app_copyright">Copyright A. Schillings, 2012</string>
+    <string name="app_changelog">
+        • v0.1.0\n
+		First public release.\n</string>
+    <string name="app_notes"></string>
+    <string name="app_privacy_statement"></string>
+
+</resources>

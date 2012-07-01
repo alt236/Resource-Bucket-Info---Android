@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="default_text_color">@color/default_text_color_light</color> 
+    <color name="default_text_color_dark">#FFEAEAEA</color>
+    <color name="default_text_color_light">@color/black</color>
+    
+    <color name="alt_row_color">@color/alt_row_color_dark</color>
+	<color name="alt_row_color_dark">#FF222222</color>
+	<color name="alt_row_color_light">@color/gray_platinum</color>
+	
+	<color name="transparent">@android:color/transparent</color>
+	
+	<color name="unselected_tab_color">#FFEAEAEA</color>
+	<color name="selected_tab_color">#FF222222</color>
+	
+	<color name="gray">#808080</color>
+	<color name="gray2">#FFCBCBCB</color>
+	<color name="gray_platinum">#FFE5E4E2</color>
+	<color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#A4C639</color>
+    <color name="orange">#FF8C00</color>
+</resources>
