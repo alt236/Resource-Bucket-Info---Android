@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/row_minimum_heigth"
+    android:background="@color/table_header_row_color">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/table_header_row_title_cell"/>
+
+</TableRow>

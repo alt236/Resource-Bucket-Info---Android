@@ -4,10 +4,22 @@
     android:layout_height="wrap_content"
     android:fillViewport="true" >
 
-    <TableLayout
-        android:id="@+id/table"
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-    </TableLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/tableDrawables"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </TableLayout>
+    </LinearLayout>
 
 </ScrollView>

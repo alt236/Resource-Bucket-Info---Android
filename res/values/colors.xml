@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <color name="default_text_color">@color/default_text_color_light</color> 
-    <color name="default_text_color_dark">#FFEAEAEA</color>
-    <color name="default_text_color_light">@color/black</color>
+    <color name="text_color_default">@color/text_color_dark</color>
+    <color name="text_color_header">@color/text_color_light</color> 
+    <color name="text_color_dark">#FFEAEAEA</color>
+    <color name="text_color_light">@color/black</color>
     
-    <color name="alt_row_color">@color/alt_row_color_dark</color>
-	<color name="alt_row_color_dark">#FF222222</color>
-	<color name="alt_row_color_light">@color/gray_platinum</color>
+    <color name="table_header_row_color">@color/gray2</color>
+    <color name="table_row_color">@color/transparent</color>
+    <color name="table_row_alt_color">@color/table_row_alt_color_dark</color>
+	<color name="table_row_alt_color_dark">#FF222222</color>
+	<color name="table_row_alt_color_light">@color/gray_platinum</color>
 	
 	<color name="transparent">@android:color/transparent</color>
 	

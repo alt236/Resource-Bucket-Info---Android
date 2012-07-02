@@ -9,5 +9,16 @@
 		First public release.\n</string>
     <string name="app_notes"></string>
     <string name="app_privacy_statement"></string>
+    <string name="density_xhdpi">xhdpi</string>
+    <string name="density_hdpi">hdpi</string>
+    <string name="density_mdpi">mdpi</string>
+    <string name="density_ldpi">ldpi</string>
+    <string name="orientation_landscape">landscape</string>
+    <string name="orientation_portrait">portrait</string>
+    <string name="orientation_square">square</string>
+    <string name="layout_xlarge">xlarge</string>
+    <string name="layout_large">large</string>
+    <string name="layout_normal">normal</string>
+    <string name="layout_small">small</string>
 
 </resources>

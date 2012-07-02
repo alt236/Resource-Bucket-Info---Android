@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="table_row_title_cell" parent="@android:style/TextAppearance.Small">
+    	<item name="android:layout_marginRight">@dimen/default_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:gravity">right</item>			 		       
+    </style>
+    
+    <style name="table_header_row_title_cell" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:layout_span">10</item>
+		<item name="android:textColor">@color/text_color_header</item>
+		<item name="android:gravity">left</item>
+    </style>
+</resources>

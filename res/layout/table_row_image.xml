@@ -6,17 +6,20 @@
 
     <TextView
         android:id="@+id/title"
-		style="@style/table_row_title_cell"/>
+        style="@style/table_row_title_cell"
+        android:layout_gravity="center_vertical" />
 
-    <TextView
+    <ImageView
         android:id="@+id/data1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingRight="@dimen/default_padding"/>
-    
+        android:layout_gravity="center_vertical|left"
+        android:paddingRight="@dimen/default_padding" />
+
     <TextView
         android:id="@+id/data2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="italic"/>
+        android:textStyle="italic" />
+
 </TableRow>
